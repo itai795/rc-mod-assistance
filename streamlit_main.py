@@ -5,6 +5,7 @@ import streamlit as st
 from answer import Answer, answer_a_question
 
 ROOT_DIR = pathlib.Path(__file__).parent
+st.set_page_config(page_title="EricGPT")
 
 
 def disable_chat_input():
@@ -101,3 +102,7 @@ extensive testing, please be patient—avoid clicking buttons too frequently, as
 Also, avoid submitting feedback multiple times, as it will be logged each time and make a mess :).""")
     with tab_gpt:
         main_gpt()
+
+
+if __name__ == '__main__':
+    main()
