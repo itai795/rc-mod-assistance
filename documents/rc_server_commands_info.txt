@@ -1,0 +1,158 @@
+Name: buildings
+Syntax: !buildings
+Help: Displays all buildings and their health
+Permission: Temporary Moderators
+Alias: !bi 
+
+Name: custom_commands
+Syntax: !custom_commands
+Help: Lists all the available custom commands groups which can be used only in a game.
+Permission: Temporary Moderators
+Plugin: custom_commands
+
+Name: donators
+Syntax: !donators
+Help: Shows all donators ingame
+Permission: Normal users
+Alias: !sd !showdonators 
+
+Name: gameinfo
+Syntax: !gameinfo
+Help: Shows detailed gameinfo
+Permission: Normal users
+Alias: !gi 
+
+Name: help
+Syntax: !help <command>
+Help: Displays all available commands and descriptions
+Permission: Normal users
+
+Name: ids
+Syntax: !ids
+Help: Displays all Ids of the players
+Permission: Half Moderators
+
+Name: maplist
+Syntax: !maplist
+Help: Displays the server's maplist
+Permission: Temporary Moderators
+
+Name: mlimit
+Syntax: !mlimit
+Help: Displays current mine limit
+Permission: Normal users
+
+Name: modlist
+Syntax: !modlist
+Help: Displays a list of all server administrators and moderators
+Permission: Normal users
+Alias: !ml 
+
+Name: nextmap
+Syntax: !nextmap
+Help: Shows the next map
+Permission: Normal users
+Alias: !shownext !shownextmap !next !n 
+
+Name: ping
+Syntax: !ping or !ping <player_name>
+Help: Shows your ping in game or ping of the specified player.
+Permission: Normal users
+
+Name: playerinfo
+Syntax: !playerinfo
+Help: Shows detailed playerinfo
+Permission: Temporary Moderators
+Alias: !pi 
+
+Name: players
+Syntax: !players
+Help: Shows all the players ingame
+Permission: Normal users
+Alias: !pl 
+
+Name: rotation
+Syntax: !rotation
+Help: Displays the server's rotation
+Permission: Normal users
+Alias: !ro 
+
+Name: rules
+Syntax: !rules
+Help: Displays the rules
+Permission: Normal users
+Alias: !r 
+
+Name: scripts
+Syntax: !scripts
+Help: Shows scripts version of all players
+Permission: Temporary Moderators
+
+Name: seen
+Syntax: !seen <player_name>
+Help: Displays the last time the specified player was seen in the server.
+Permission: Normal users
+Plugin: seen_system
+
+Name: show_warnings
+Syntax: !show_warnings
+Help: Lists in game all players who currently have warnings.
+Permission: Temporary Moderators
+Plugin: warn_system
+
+Name: show_warnings_all
+Syntax: !show_warnings_all or !saw
+Help: Lists all currently issued warnings for players which are online and also for which are already disconnected.
+Permission: Half Moderators
+Alias: !saw 
+Plugin: warn_system
+
+Name: showmods
+Syntax: !showmods or !mods or !sm
+Help: Shows all moderators ingame
+Permission: Normal users
+Alias: !sm !mods 
+
+Name: showmsgs
+Syntax: !showmsgs
+Help: Displays all pre-defined messages
+Permission: Temporary Moderators
+
+Name: shown00bs
+Syntax: !shown00bs
+Help: Displays all n00bs
+Permission: Normal users
+Alias: !shownoobs !n00bs 
+
+Name: stats
+Syntax: !stats <playername>
+Help: Displays ingame statistics of a specific player
+Permission: Temporary Moderators
+
+Name: statsme
+Syntax: !statsme
+Help: Displays your detailed ingame statistics
+Permission: Normal users
+
+Name: teamplayers
+Syntax: !teamplayers
+Help: Displays all teamplayers
+Permission: Normal users
+Alias: !tp
+
+Name: timegame
+Syntax: !timegame or !time
+Help: Display game duration since start of actual map.
+Permission: Normal users
+Alias: !time 
+
+Name: vehicles
+Syntax: !vehicles
+Help: Displays all vehicles
+Permission: Temporary Moderators
+Alias: !ve 
+
+Name: version
+Syntax: !version
+Help: Displays the version of BRenBot running on the server
+Permission: Normal users

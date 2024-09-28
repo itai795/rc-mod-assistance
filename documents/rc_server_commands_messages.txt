@@ -1,0 +1,86 @@
+Name: amsg
+Syntax: !amsg <message>
+Help: Sends a private Admin Message to all players
+Permission: Half Moderators
+
+Name: autoannounce
+Syntax: !autoannounce;
+Help: Displays a random auto announce
+Permission: Temporary Moderators
+
+Name: cmsg
+Syntax: !cmsg <colour> <message>
+Help: Sends a coloured message to the server. Colour can either be a 3 digit RGB code (format 000,000,000) or a colour name.
+Permission: Half Moderators
+
+Name: cmsgp
+Syntax: !cmsgp <colour> <player> <message>
+Help: Sends a coloured message to a single player. Colour can either be a 3 digit RGB code (format 000,000,000) or a colour name.
+Permission: Half Moderators
+
+Name: cmsgt
+Syntax: !cmsgt <colour> <team> <message>
+Help: Sends a coloured message to a single team. Colour can either be a 3 digit RGB code (format 000,000,000) or a colour name. Team can be the three digit name or ID number.
+Permission: Half Moderators
+
+Name: deljoin
+Syntax: !deljoin
+Help: Delete the user's join message
+Permission: Normal users
+
+Name: hostmsg
+Syntax: !msg <message>
+Help: Sends a public message to the server
+Permission: Normal users
+Alias: !msg 
+
+Name: page
+Syntax: !page <user> <message>
+Help: Pages an user
+Permission: Normal users
+
+Name: pagemods
+Syntax: !pagemods <message> or !pm <message>
+Help: Pages all mods ingame with a specified message.
+Permission: Half Moderators
+Alias: !pm 
+
+Name: pamsg
+Syntax: !pamsg <user> <message>
+Help: Sends a private Admin Message to a user
+Permission: Half Moderators
+
+Name: postmsg
+Syntax: !postmsg <msgnum>
+Help: Displays one pre-defined message
+Permission: Temporary Moderators
+
+Name: ppage
+Syntax: !ppage <user> <message>
+Help: Pages a user (Gamespy Arcade Style)
+Permission: Normal users
+
+Name: setjoin
+Syntax: !setjoin <joinmessage>
+Help: Sets the user's join message
+Permission: Normal users
+
+Name: showmsgs
+Syntax: !showmsgs
+Help: Displays all pre-defined messages
+Permission: Temporary Moderators
+
+Name: tpage
+Syntax: !tpage <team> <message>
+Help: Pages entire team (specify Nod or GDI)
+Permission: Half Moderators
+
+Name: viewjoin
+Syntax: !viewjoin
+Help: View the user's join message
+Permission: Normal users
+
+Name: wpage
+Syntax: !wpage <user> <message>
+Help: Pages an user on XWIS (Westwood Online Services). Player must be logged
+Permission: Normal users

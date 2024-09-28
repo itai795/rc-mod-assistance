@@ -1,0 +1,1074 @@
+Name: about
+Syntax: !about <module>
+Help: Shows the description for the specified module
+Permission: Half Moderators
+
+Name: addmute
+Syntax: !addmute <player_name> <ip_address> <hardware_hash> <reason>
+Help: Add a mute to the database without the player needing to be ingame.
+Permission: Half Moderators
+Plugin: mute_system
+
+Name: addreg
+Syntax: !addreg <playername> <password>
+Help: Adds a registration of specified player with specific password. Nicknames are case sensitive for Essentials Plugin.
+Permission: Full and Veteran Moderators
+
+Name: admin
+Syntax: !admin <add|del> <nick> <level>
+Help: Edit the moderator list from IRC.
+Permission: Owners, Administrators, Seniors and Developers
+Plugin: admin
+
+Name: allow
+Syntax: !allow <playername>
+Help: Allows a user back to the server after they have been kicked
+Permission: Temporary Moderators
+
+Name: amsg
+Syntax: !amsg <message>
+Help: Sends a private Admin Message to all players
+Permission: Half Moderators
+
+Name: atm
+Syntax: !atm <playername>
+Help: Adds a temporary moderator
+Permission: Half Moderators
+
+Name: auth
+Syntax: !auth <user>
+Help: Authenticates a user ingame
+Permission: Normal users
+
+Name: autoannounce
+Syntax: !autoannounce;
+Help: Displays a random auto announce
+Permission: Temporary Moderators
+
+Name: autokb
+Syntax: !autokb <playername> <reason>
+Help: Adds the specified player name to the list of auto kick ban.
+Permission: Full and Veteran Moderators
+Plugin: warn_system
+
+Name: autokb_list
+Syntax: !autokb_list
+Help: Lists all the players currently are part of auto kick ban.
+Permission: Half Moderators
+Plugin: warn_system
+
+Name: ban
+Syntax: !ban <playername> <reason>
+Help: Bans a user from the server
+Permission: Half Moderators
+Alias: !kickban !kb 
+
+Name: banhw
+Syntax: !banhw <add|del|lookup> <player_name> <reason>
+Help: Add / Remove / Lookup for hardware hash bans
+Permission: Full and Veteran Moderators
+Plugin: hw_system
+
+Name: banip
+Syntax: !ban <ip/partial ip> <reason>
+Help: Bans an ip or ip range from the server. To ban a partial IP use !banip 123.123.123 (First three digit groups)
+Permission: Half Moderators
+
+Name: banlistfds
+Syntax: !banlistfds
+Help: Lists all ban entries from banlist.tsv file at FDS. Banned entries are blocked by connection acceptance filter at FDS.
+Permission: Half Moderators
+
+Name: banlog
+Syntax: !banlog <playername>
+Help: Searches the ban log for any records matching your search string.
+Permission: Temporary Moderators
+
+Name: banserial
+Syntax: !banserial <add|del|lookup> <player_name> <reason>
+Help: Add / Remove / Lookup for Serial Hash Bans
+Permission: Full and Veteran Moderators
+Plugin: serial_system
+
+Name: beaconall
+Syntax: !beaconall
+Help: Gives every player in a game powerup with Ion Cannon Beacon - 30s.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: beaconfastall
+Syntax: !beaconfastall
+Help: Gives every player in a game powerup with Ion Cannon Beacon - 10s.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: blamoall
+Syntax: !blamoall
+Help: Changes every player in a game Shield Skin type to Blamo.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: bmute
+Syntax: !bmute <player_name>
+Help: Prevent or re-allow a specified player from deploying beacons.
+Permission: Temporary Moderators
+
+Name: buildings
+Syntax: !buildings
+Help: Displays all buildings and their health
+Permission: Temporary Moderators
+Alias: !bi 
+
+Name: c4mute
+Syntax: !c4mute <player_name>
+Help: Prevent or re-allow a player from using remote C4 and proximity C4.
+Permission: Temporary Moderators
+
+Name: clearwarningstats
+Syntax: !clearwarningstats or !cws
+Help: Clears all statistics for the warn system. Once run this command it deleted data cannot be restored!
+Permission: Owners, Administrators, Seniors and Developers
+Alias: !cws 
+Plugin: warn_system
+
+Name: cmsg
+Syntax: !cmsg <colour> <message>
+Help: Sends a coloured message to the server. Colour can either be a 3 digit RGB code (format 000,000,000) or a colour name.
+Permission: Half Moderators
+
+Name: cmsgp
+Syntax: !cmsgp <colour> <player> <message>
+Help: Sends a coloured message to a single player. Colour can either be a 3 digit RGB code (format 000,000,000) or a colour name.
+Permission: Half Moderators
+
+Name: cmsgt
+Syntax: !cmsgt <colour> <team> <message>
+Help: Sends a coloured message to a single team. Colour can either be a 3 digit RGB code (format 000,000,000) or a colour name. Team can be the three digit name or ID number.
+Permission: Half Moderators
+
+Name: custom_commands
+Syntax: !custom_commands
+Help: Lists all the available custom commands groups which can be used only in a game.
+Permission: Temporary Moderators
+Plugin: custom_commands
+
+Name: delautokb
+Syntax: !delautokb <playername>
+Help: Removes the specified player name from the list of auto kick ban.
+Permission: Full and Veteran Moderators
+Plugin: warn_system
+
+Name: delban
+Syntax: !delban <id>
+Help: Deletes a specific ban
+Permission: Full and Veteran Moderators
+
+Name: delbanfds
+Syntax: !delbanfds <Name> or <IP_Address> or <Serial_Hash> or <Hardware_Hash>
+Help: Remove specified ban entry from banlist.tsv file at FDS. Matching string can be found over !banlistfds.
+Permission: Full and Veteran Moderators
+
+Name: deljoin
+Syntax: !deljoin
+Help: Delete the user's join message
+Permission: Normal users
+
+Name: delmute
+Syntax: !delmute <player_name>
+Help: Remove a mute from the database without the player needing to be ingame.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: delrank
+Syntax: !delrank <playername>
+Help: Deletes all rank data for the specified player.
+Permission: Full and Veteran Moderators
+Plugin: rank_global
+
+Name: delreg
+Syntax: !delreg <playername>
+Help: Removes a registration of specified player from a database. Nicknames are case sensitive for Essentials Plugin.
+Permission: Full and Veteran Moderators
+
+Name: deltime
+Syntax: !deltime
+Help: Removes the ingame time limit. Works only for timed games!
+Permission: Full and Veteran Moderators
+
+Name: delwarn
+Syntax: !delwarn <playername> or !pardon <playername>
+Help: Resets warnings for the specified player to 0. Can also be used on IRC members, just add @IRC to the name.
+Permission: Full and Veteran Moderators
+Alias: !pardon 
+Plugin: warn_system
+
+Name: die
+Syntax: !die NOW
+Help: Closes BRenBot.
+Permission: Full and Veteran Moderators
+
+Name: disarm
+Syntax: !disarm <player_name>
+Help: Disarms specified player all Proximity/Remote/Timed C4 and Beacons/Nukes if any.
+Permission: Temporary Moderators
+
+Name: disarmb
+Syntax: !disarmb <player_name>
+Help: Disarms specified player all Beacons/Nukes if any.
+Permission: Temporary Moderators
+
+Name: disarmp
+Syntax: !disarmp <player_name>
+Help: Disarms specified player all Proximity C4 if any.
+Permission: Temporary Moderators
+
+Name: donators
+Syntax: !donators
+Help: Shows all donators ingame
+Permission: Normal users
+Alias: !sd !showdonators 
+
+Name: dtm
+Syntax: !dtm <playername>
+Help: Deletes a temporary moderator
+Permission: Half Moderators
+
+Name: dumplogs
+Syntax: !dumpLogs
+Help: Dumps all logs to the logfiles defined in brenbot.cfg.
+Permission: Full and Veteran Moderators
+
+Name: eject
+Syntax: !eject <player_name>
+Help: Ejects specified player from whatever vehicle they are in, if any.
+Permission: Temporary Moderators
+
+Name: fds
+Syntax: !fds <command>
+Help: Sends a command directly to the FDS
+Permission: Full and Veteran Moderators
+
+Name: freeze
+Syntax: !freeze <player_name>
+Help: Removes control of specified player and his character.
+Permission: Half Moderators
+
+Name: friendlyfire
+Syntax: !friendlyfire <on/off>
+Help: Enable or Disable friendly fire for the current map.
+Permission: Full and Veteran Moderators
+
+Name: ftc
+Syntax: !ftc <playername> or !forcetc <playername>
+Help: Forces a user to change team without changing score or cash
+Permission: Temporary Moderators
+Alias: !forcetc 
+
+Name: ftc2
+Syntax: !ftc2 <playername> or !forcetc2 <playername>
+Help: Forces a user to change team without changing score and cash above starting amount is distributed over his former team
+Permission: Temporary Moderators
+Alias: !forcetc2 
+
+Name: ftc3
+Syntax: !ftc3 <playername> or !forcetc3 <playername>
+Help: Forces a user to change team without changing score and cash is set to starting amount
+Permission: Temporary Moderators
+Alias: !forcetc3 
+
+Name: ftc4
+Syntax: !ftc4 <playername> or !forcetc4 <playername>
+Help: Forces a user to change team with reseting score, kills, deaths to zero and credits are set to starting amount
+Permission: Temporary Moderators
+Alias: !forcetc4 
+
+Name: gameinfo
+Syntax: !gameinfo
+Help: Shows detailed gameinfo
+Permission: Normal users
+Alias: !gi 
+
+Name: gameover
+Syntax: !gameover NOW
+Help: Ends the current map
+Permission: Half Moderators
+
+Name: getbw
+Syntax: !getbw <playername>
+Help: Gets bandwidth settings
+Permission: Half Moderators
+
+Name: givepoints
+Syntax: !givepoints <player_name> <amount_of_points>
+Help: Gives a specified player the specified amount of points. (Can only be a positive amount).
+Permission: Full and Veteran Moderators
+
+Name: givepow
+Syntax: !givepow <player_name> <name_of_preset_powerup>
+Help: Gives a specified player the specified powerup.
+Permission: Full and Veteran Moderators
+
+Name: godmodeall
+Syntax: !godmodeall
+Help: Changes every player in a game to a God character.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: gravgunall
+Syntax: !gravgunall
+Help: Gives every player in a game powerup with Gravity Gun. Limited only for RxD maps.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: gunnersall
+Syntax: !gunnersall
+Help: Changes every player in a game to a Gunner character.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: help
+Syntax: !help <command>
+Help: Displays all available commands and descriptions
+Permission: Normal users
+
+Name: hostmsg
+Syntax: !msg <message>
+Help: Sends a public message to the server
+Permission: Normal users
+Alias: !msg 
+
+Name: hwbanforced
+Syntax: !hwbanforced <player_name> <hardware_hash> <reason>
+Help: Force ban a hardware hash that does not exist in the database.
+Permission: Full and Veteran Moderators
+Plugin: hw_system
+
+Name: hwbanlist
+Syntax: !hwbanlist
+Help: Print all placed hardware bans from the database.
+Permission: Half Moderators
+Plugin: hw_system
+
+Name: hwhash
+Syntax: !hwhash <hardware_hash>
+Help: Output all players associated with specified hardware hash.
+Permission: Half Moderators
+Plugin: hw_system
+
+Name: hwnick
+Syntax: !hwnick <player_name>
+Help: Output hardware hash associated with specified player.
+Permission: Half Moderators
+Plugin: hw_system
+
+Name: hwrefresh
+Syntax: !hwrefresh <player_name>
+Help: Request again hardware hash from specified player. Use only if you dont see HWID in column at players info output.
+Permission: Temporary Moderators
+Plugin: hw_system
+
+Name: ids
+Syntax: !ids
+Help: Displays all Ids of the players
+Permission: Half Moderators
+
+Name: joinsound
+Syntax: !joinsound
+Help: Plays special user join sound during join game event.
+Permission: Normal users
+Plugin: sounds_system
+
+Name: kick
+Syntax: !kick <playername> <reason>
+Help: Kicks a specific user
+Permission: Temporary Moderators
+
+Name: kicklog
+Syntax: !kicklog <searchstring>
+Help: Searches the kick log for any records matching your search string, or if no search is specified shows the last 10 records.
+Permission: Temporary Moderators
+
+Name: kill
+Syntax: !kill <playername>
+Help: Kills a player
+Permission: Half Moderators
+
+Name: killharv
+Syntax: !killharv <all/gdi/nod>
+Help: Destroy specified harvester in a game.
+Permission: Full and Veteran Moderators
+
+Name: killsound
+Syntax: !killsound
+Help: Plays special user kill sound during kill game event.
+Permission: Normal users
+Plugin: sounds_system
+
+Name: leavesound
+Syntax: !leavesound
+Help: Plays special user leave sound during leave game event.
+Permission: Normal users
+Plugin: sounds_system
+
+Name: lips
+Syntax: !lips <ip_address>
+Help: Finds all names used on the specified IP Address thats in the local database.
+Permission: Half Moderators
+Plugin: ip_system
+
+Name: listreg
+Syntax: !listreg or !listreg <playername>
+Help: Display all registered player names in a database. Nicknames are case sensitive.
+Permission: Half Moderators
+
+Name: lns
+Syntax: !lns <player_name>
+Help: Finds all IPs used on the specified player name thats in the local database.
+Permission: Half Moderators
+Plugin: ip_system
+
+Name: logsearch
+Syntax: !logsearch <searchstring>
+Help: Searches all logs for any records matching your search string.
+Permission: Half Moderators
+
+Name: maplist
+Syntax: !maplist
+Help: Displays the server's maplist
+Permission: Temporary Moderators
+
+Name: massdisarmb
+Syntax: !massdisarmb
+Help: Disarms all beacons or nukes in a game.
+Permission: Full and Veteran Moderators
+
+Name: massmurder
+Syntax: !massmurder
+Help: Kills every player in a game including their vehicles.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: maxarmorall
+Syntax: !maxarmorall
+Help: Gives every player in a game extra 500 health and armor.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: mdelrank
+Syntax: !mdelrank <playername>
+Help: Deletes all rank data in a monthly ranks for the specified player.
+Permission: Full and Veteran Moderators
+Alias: !tempdelrank 
+Plugin: rank_monthly
+
+Name: mlimit
+Syntax: !mlimit
+Help: Displays current mine limit
+Permission: Normal users
+
+Name: modafk
+Syntax: !modafk
+Help: Puts you into Neutral team side and switch you into a spectate mode for AFK reasons.
+Permission: Temporary Moderators
+
+Name: modback
+Syntax: !modback
+Help: Puts you into Nod team side, after being back.
+Permission: Temporary Moderators
+
+Name: modlist
+Syntax: !modlist
+Help: Displays a list of all server administrators and moderators
+Permission: Normal users
+Alias: !ml 
+
+Name: modules
+Syntax: !modules
+Help: Displays the available modules
+Permission: Half Moderators
+
+Name: money
+Syntax: !money <player_name>
+Help: Will give to specified player 100 000 credits.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: moneyall
+Syntax: !moneyall
+Help: Will give all players 100 000 credits.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: mrank
+Syntax: !mrank
+Help: Player rankings for current month
+Permission: Normal users
+Alias: !temprank 
+Plugin: rank_monthly
+
+Name: mrankallow
+Syntax: !mrankallow <playername>
+Help: Stops the specified player being ignored calculating for monthly ranks.
+Permission: Half Moderators
+Alias: !temprankallow 
+Plugin: rank_monthly
+
+Name: mrankignore
+Syntax: !mrankignore <playername>
+Help: Ignores the specified player when calculating for monthly ranks.
+Permission: Half Moderators
+Alias: !temprankignore 
+Plugin: rank_monthly
+
+Name: mrankmerge
+Syntax: !mrankmerge <source_playername> <target_playername>
+Help: Merges rank data in a monthly ranks with source to target player name. Only works with ranking mode 4.
+Permission: Owners, Administrators, Seniors and Developers
+Alias: !temprankmerge 
+Plugin: rank_monthly
+
+Name: mrankstats
+Syntax: !mrankstats <playername>
+Help: Shows detailed statistics for the specified player in a current monthly ranks.
+Permission: Normal users
+Alias: !temprankstats 
+Plugin: rank_monthly
+
+Name: mtop
+Syntax: !mtop <number> or !mtop
+Help: Shows top x players for current month. <number> can be between 1 and 10. Defaults to 3.
+Permission: Temporary Moderators
+Alias: !temptop 
+Plugin: rank_monthly
+
+Name: mupdate
+Syntax: !mupdate
+Help: Forces an update of the statistics website for monthly ranks.
+Permission: Owners, Administrators, Seniors and Developers
+Alias: !tempupdate 
+Plugin: rank_monthly
+
+Name: murder
+Syntax: !murder <player_name>
+Help: Kill specified player in a game even his vehicle if is a driver.
+Permission: Full and Veteran Moderators
+
+Name: mute
+Syntax: !mute <player_name> <reason>
+Help: Prevents a player from using chat or radio commands and adds thier info into a database. Player must be ingame.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: muteinfo
+Syntax: !muteinfo <player_name>
+Help: View info about a mute.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: mutelist
+Syntax: !mutelist <player_name> or !mutelist <ip_address>
+Help: View the mute list with specified string or every record from a database.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: n00b
+Syntax: !n00b <playername> <reason>
+Help: Marks another player a n00b for stupid behavior
+Permission: Normal users
+Alias: !noob 
+
+Name: nextmap
+Syntax: !nextmap
+Help: Shows the next map
+Permission: Normal users
+Alias: !shownext !shownextmap !next !n 
+
+Name: nukeall
+Syntax: !nukeall
+Help: Gives every player in a game powerup with Nuclear Strike Beacon - 30s.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: nukefastall
+Syntax: !nukefastall
+Help: Gives every player in a game powerup with Nuclear Strike Beacon - 10s.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: page
+Syntax: !page <user> <message>
+Help: Pages an user
+Permission: Normal users
+
+Name: pagemods
+Syntax: !pagemods <message> or !pm <message>
+Help: Pages all mods ingame with a specified message.
+Permission: Half Moderators
+Alias: !pm 
+
+Name: pamsg
+Syntax: !pamsg <user> <message>
+Help: Sends a private Admin Message to a user
+Permission: Half Moderators
+
+Name: pedestals
+Syntax: !pedestals <on/off>
+Help: Enable or Disable pedestals for the current map.
+Permission: Full and Veteran Moderators
+
+Name: ping
+Syntax: !ping or !ping <player_name>
+Help: Shows your ping in game or ping of the specified player.
+Permission: Normal users
+
+Name: playerinfo
+Syntax: !playerinfo
+Help: Shows detailed playerinfo
+Permission: Temporary Moderators
+Alias: !pi 
+
+Name: players
+Syntax: !players
+Help: Shows all the players ingame
+Permission: Normal users
+Alias: !pl 
+
+Name: plimit
+Syntax: !plimit <number_of_players>
+Help: Changes the current player limit. Allowed values are 1 - 120 minutes.
+Permission: Full and Veteran Moderators
+
+Name: plugin_load
+Syntax: !load_plugin <plugin>
+Help: Attempts to load the specified plugin into BRenBot.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: plugin_unload
+Syntax: !unload_plugin <plugin>
+Help: Attempts to unload the specified plugin from BRenBot.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: plugins
+Syntax: !load_plugin <plugin>
+Help: Show the current state of all plugins known to BRenBot.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: postmsg
+Syntax: !postmsg <msgnum>
+Help: Displays one pre-defined message
+Permission: Temporary Moderators
+
+Name: ppage
+Syntax: !ppage <user> <message>
+Help: Pages a user (Gamespy Arcade Style)
+Permission: Normal users
+
+Name: psound
+Syntax: !psound <soundfile.wav or soundfile.mp3>
+Help: Plays a sound heard by all players.
+Permission: Normal users
+Plugin: sounds_system
+
+Name: qkick
+Syntax: !qkick <playername> <reason>
+Help: Qkicks (kick and auto-allow) a specific user
+Permission: Temporary Moderators
+
+Name: ragequit
+Syntax: !ragequit
+Help: Leave server in fury of rage.
+Permission: Normal users
+
+Name: rank
+Syntax: !rank
+Help: Player rankings
+Permission: Normal users
+Plugin: rank_global
+
+Name: rankallow
+Syntax: !rankallow <playername>
+Help: Stops the specified player being ignored calculating ranks.
+Permission: Half Moderators
+Plugin: rank_global
+
+Name: rankignore
+Syntax: !rankignore <playername>
+Help: Ignores the specified player when calculating ranks.
+Permission: Half Moderators
+Plugin: rank_global
+
+Name: rankmerge
+Syntax: !rankmerge <source_playername> <target_playername>
+Help: Merges rank data with source to target player name. Only works with ranking mode 4.
+Permission: Owners, Administrators, Seniors and Developers
+Plugin: rank_global
+
+Name: rankstats
+Syntax: !rankstats <playername>
+Help: Shows detailed statistics for the specified player.
+Permission: Normal users
+Plugin: rank_global
+
+Name: rebuild
+Syntax: !rebuild <gdipp/gdiref/gdiwf/gdibar/gdiagt/gdicom/gdirep/gdisilo/nodpp/nodref/nodair/nodhon/nodob/nodcom/nodrep/nodsilo>
+Help: Revives specific building in a game. Just note custom maps can have custom presets. These presets are from stock client.
+Permission: Full and Veteran Moderators
+
+Name: rec
+Syntax: !rec <playername> <reason> or !recommend <playername> <reason>
+Help: Recommends another player for good teamplay
+Permission: Normal users
+Alias: !recommend 
+
+Name: recallow
+Syntax: !recallow <playername>
+Help: Enables recommendations for a specific user
+Permission: Full and Veteran Moderators
+
+Name: recignore
+Syntax: !recignore <playername>
+Help: Disables recommendations for a specific user
+Permission: Half Moderators
+
+Name: recs
+Syntax: !recs or !recommendations
+Help: Shows your current recommendations.
+Permission: Normal users
+Alias: !recommendations 
+
+Name: refund
+Syntax: !refund <player_name> <amount>
+Help: Gives a specified player the specified amount of credits. (Can only be a positive amount).
+Permission: Full and Veteran Moderators
+
+Name: rehash
+Syntax: !rehash
+Help: Rehashs all BRenBot configuration files
+Permission: Full and Veteran Moderators
+
+Name: report
+Syntax: !report <message>
+Help: Report any issue with a server or player
+Permission: Normal users
+
+Name: requestmods
+Syntax: !requestmod <message> or !rm <message>
+Help: Pages all mods ingame and on IRC with a specified message.
+Permission: Normal users
+Alias: !rm 
+
+Name: rotation
+Syntax: !rotation
+Help: Displays the server's rotation
+Permission: Normal users
+Alias: !ro 
+
+Name: rules
+Syntax: !rules
+Help: Displays the rules
+Permission: Normal users
+Alias: !r 
+
+Name: screenshot
+Syntax: !screenshot or !sshot <playername>
+Help: Take a screenshot of specified player.
+Permission: Half Moderators
+Alias: !sshot 
+
+Name: scripts
+Syntax: !scripts
+Help: Shows scripts version of all players
+Permission: Temporary Moderators
+
+Name: seen
+Syntax: !seen <player_name>
+Help: Displays the last time the specified player was seen in the server.
+Permission: Normal users
+Plugin: seen_system
+
+Name: serialbanforced
+Syntax: !serialbanforced <player_name> <serial_hash> <reason>
+Help: Force ban a Serial hash that does not exist in the database.
+Permission: Full and Veteran Moderators
+Plugin: serial_system
+
+Name: serialbanlist
+Syntax: !serialbanlist
+Help: Print all placed serial bans from the database.
+Permission: Half Moderators
+Plugin: serial_system
+
+Name: serialhash
+Syntax: !serialhash <serial_hash>
+Help: Output all players associated with specified serial hash.
+Permission: Half Moderators
+Plugin: serial_system
+
+Name: serialnick
+Syntax: !serialnick <player_name>
+Help: Output serial hash associated with specified player.
+Permission: Half Moderators
+Plugin: serial_system
+
+Name: set
+Syntax: !set <module_name> <on/off>
+Help: Sets a specific module
+Permission: Half Moderators
+
+Name: setbw
+Syntax: !setbw <playername> <bandwidth>
+Help: Sets bandwidth settings of a player
+Permission: Half Moderators
+
+Name: setcolor
+Syntax: !setcolor <color>
+Help: Sets a special players killing spree color.
+Permission: Normal users
+Plugin: sounds_system
+
+Name: setjoin
+Syntax: !setjoin <joinmessage>
+Help: Sets the user's join message
+Permission: Normal users
+
+Name: setjoinsound
+Syntax: !setjoinsound <soundfile.wav or soundfile.mp3>
+Help: Sets a join sound for a player.
+Permission: Normal users
+Plugin: sounds_system
+
+Name: setkillsound
+Syntax: !setkillsound <soundfile.wav or soundfile.mp3>
+Help: Sets a kill sound for a player.
+Permission: Normal users
+Plugin: sounds_system
+
+Name: setleavesound
+Syntax: !setleavesound <soundfile.wav or soundfile.mp3>
+Help: Sets a leave sound for a player.
+Permission: Normal users
+Plugin: sounds_system
+
+Name: settime
+Syntax: !settime <minutes>
+Help: Changes the time remaining. Allowed values are 1 - 240 minutes.
+Permission: Full and Veteran Moderators
+
+Name: show_warnings
+Syntax: !show_warnings
+Help: Lists in game all players who currently have warnings.
+Permission: Temporary Moderators
+Plugin: warn_system
+
+Name: show_warnings_all
+Syntax: !show_warnings_all or !saw
+Help: Lists all currently issued warnings for players which are online and also for which are already disconnected.
+Permission: Half Moderators
+Alias: !saw 
+Plugin: warn_system
+
+Name: showmods
+Syntax: !showmods or !mods or !sm
+Help: Shows all moderators ingame
+Permission: Normal users
+Alias: !sm !mods 
+
+Name: showmsgs
+Syntax: !showmsgs
+Help: Displays all pre-defined messages
+Permission: Temporary Moderators
+
+Name: shown00bs
+Syntax: !shown00bs
+Help: Displays all n00bs
+Permission: Normal users
+Alias: !shownoobs !n00bs 
+
+Name: shun
+Syntax: !shun <player>
+Help: Shuns the specified player, so they cannot use any of BRenBots commands
+Permission: Half Moderators
+
+Name: snda
+Syntax: !snda <soundfile.wav>
+Help: Plays a sound heard by all players. Filenames of sound files in always.dat should be used.
+Permission: Half Moderators
+Alias: !broadcast 
+
+Name: sndp
+Syntax: !sndp <user> <soundfile.wav>
+Help: Plays a sound heard (only) by user. Filenames of sound files in always.dat should be used.
+Permission: Half Moderators
+
+Name: sndt
+Syntax: !snda <team> <soundfile.wav>
+Help: Plays a sound heard by entire team. Filenames of sound files in always.dat should be used. Team Nod or 0, Team GDI or 1.
+Permission: Half Moderators
+
+Name: snm
+Syntax: !snm <map> or !setnextmap <map>
+Help: Sets the next map in the rotation
+Permission: Full and Veteran Moderators
+Alias: !setnextmap 
+
+Name: spectate
+Syntax: !spectate <player_name>
+Help: Puts specified player in a game to spectator mode. Toggle again will remove him from spectator mode.
+Permission: Half Moderators
+
+Name: stats
+Syntax: !stats <playername>
+Help: Displays ingame statistics of a specific player
+Permission: Temporary Moderators
+
+Name: statsme
+Syntax: !statsme
+Help: Displays your detailed ingame statistics
+Permission: Normal users
+
+Name: takepoints
+Syntax: !takepoints <player_name> <amount_of_points>
+Help: Takes a specified player the specified amount of points. (Can only be a positive amount).
+Permission: Full and Veteran Moderators
+
+Name: tbot
+Syntax: !tbot <player_name> <off/passive/low/medium/high/aggressive>
+Help: Defined player will get specific level of mitigation.
+Permission: Full and Veteran Moderators
+
+Name: tbotdel
+Syntax: !tbotdel <player_name>
+Help: Defined player will be removed from exception list and will be applied global level of mitigation as everyone else have.
+Permission: Full and Veteran Moderators
+
+Name: tbotlist
+Syntax: !tbotlist
+Help: Display list of currently saved players in a mitigation list.
+Permission: Full and Veteran Moderators
+
+Name: teamplayers
+Syntax: !teamplayers
+Help: Displays all teamplayers
+Permission: Normal users
+Alias: !tp 
+
+Name: tempmute
+Syntax: !tempmute <player_name>
+Help: Mutes specified player in a game without storing into a database.
+Permission: Temporary Moderators
+
+Name: tempunmute
+Syntax: !tempunmute <player_name>
+Help: Unmute specified player in a game without touching a database.
+Permission: Temporary Moderators
+
+Name: timegame
+Syntax: !timegame or !time
+Help: Display game duration since start of actual map.
+Permission: Normal users
+Alias: !time 
+
+Name: togglesounds
+Syntax: !togglesounds <sounds|chatsounds|killsounds|music>
+Help: Enable/Disable sounds|chatsounds|killsounds|music
+Permission: Normal users
+Plugin: sounds_system
+
+Name: top
+Syntax: !top <number> or !top
+Help: Shows top x players. <number> can be between 1 and 10. Defaults to 3.
+Permission: Normal users
+Plugin: rank_global
+
+Name: totalips
+Syntax: !totalips
+Help: Local IP System database stats.
+Permission: Half Moderators
+Plugin: ip_system
+
+Name: tpage
+Syntax: !tpage <team> <message>
+Help: Pages entire team (specify Nod or GDI)
+Permission: Half Moderators
+
+Name: unblamoall
+Syntax: !unblamoall
+Help: Removes from every player in a game Blamo Shield Skin type.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: unfreeze
+Syntax: !unfreeze <player_name>
+Help: Gives back control of specified player and his character.
+Permission: Half Moderators
+
+Name: unmute
+Syntax: !ummute <player_name>
+Help: Unmutes a player and removes thier info from a database.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: unrefund
+Syntax: !unrefund <player_name> <amount>
+Help: Takes a specified player the specified amount of credits. (Can only be a positive amount).
+Permission: Full and Veteran Moderators
+
+Name: unshun
+Syntax: !unshun <player>
+Help: Unshuns the specified player, so they can use BRenBots commands again
+Permission: Half Moderators
+
+Name: update
+Syntax: !update
+Help: Forces an update of the statistics website for global ranks.
+Permission: Owners, Administrators, Seniors and Developers
+Plugin: rank_global
+
+Name: updatesounds
+Syntax: !updatesounds
+Help: Import sounds.list into the sounds system database.
+Permission: Full and Veteran Moderators
+Plugin: sounds_system
+
+Name: vehicles
+Syntax: !vehicles
+Help: Displays all vehicles
+Permission: Temporary Moderators
+Alias: !ve 
+
+Name: version
+Syntax: !version
+Help: Displays the version of BRenBot running on the server
+Permission: Normal users
+
+Name: viewjoin
+Syntax: !viewjoin
+Help: View the user's join message
+Permission: Normal users
+
+Name: vip
+Syntax: !vip <player_name>
+Help: Grant to specified player VIP access. Player will have access for !regme command.
+Permission: Half Moderators
+Plugin: registrations
+
+Name: vlimit
+Syntax: !vlimit
+Help: Displays current vehicle limit
+Permission: Normal users
+Alias: !vl 
+
+Name: warn
+Syntax: !warn <playername> <reason>
+Help: Warns a specified player for the given reason.
+Permission: Half Moderators
+Plugin: warn_system
+
+Name: warning_stats
+Syntax: !warning_stats [month/total]
+Help: Shows todays statistics for the warn system. Add month on the end to get stats for the whole month, or total to get stats for all time.
+Permission: Temporary Moderators
+Plugin: warn_system
+
+Name: warnings
+Syntax: !warnings or !warnings <playername>
+Help: Shows how many warnings you or the specified player have.
+Permission: Normal users
+Plugin: warn_system
+
+Name: winvite
+Syntax: !winvite <user>
+Help: Invites an user on XWIS (Westwood Online Services) to this server. Player must be logged
+Permission: Normal users
+
+Name: wpage
+Syntax: !wpage <user> <message>
+Help: Pages an user on XWIS (Westwood Online Services). Player must be logged
+Permission: Normal users

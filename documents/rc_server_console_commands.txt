@@ -1,0 +1,219 @@
+ACRELOAD - Reloads anticheat.ini, anticheat2.ini and acallow.ini to pick up any new values.
+ADDBAN <name> <IP> <serial> <hwid> [reason] - Adds a ban entry.
+ADDBANEXCEPTION <name> <IP> <serial> <hwid> [reason] - Adds a ban exception.
+ADDFORCETT <name> <IP> <serial> <hwid> [reason] - Adds a forceTT entry.
+ADDFORCETTEXCEPTION <name> <IP> <serial> <hwid> [reason] - Adds a forceTT exception.
+ADDMITIGATIONEXCEPTION <name> <level> - Adds a custom mitigation exception for specified player. (ame)
+ADDTAG <playerid> <persist on leave> <persist on map> <position> <tag> - Add a custom name tag to a player. Persist on map/leave determines if this tag should be removed when the player leaves the game or a new map loads. Position determintes the tag's position relative to the player's other tags.
+ADMIN_MESSAGE <message> - Sends a popup message to all players. (amsg)
+ADMIN_MESSAGE <message> - sends an admin message to all clients. Host only. (amsg)
+ALIMIT <limit> - Changes the current air vehicle limit. Host only.
+ALIMITD - Displays the current air vehicle limit. Host only.
+ALLOW [<Nickname>|<Id>] - Remove user channel ban from this server (WOL mode only).
+BAN <playerid> [reason] - Kicks the given player from the server and bans their nick, IP, serial and hwid.
+BEACONLOCK <playerid> - Prevent a player from deploying beacons. (beaconmute)
+BEACONLOCKTOGGLE <playerid> - Prevent or re-allow a player from deploying beacons. (beaconmutetoggle)
+BLAMO <playerid> - Set shield type of specified object to Blamo. Object is not possible to kill or destroy.
+BLOCKHARVGDI - Block the GDI Tiberium Harvester.
+BLOCKHARVNOD - Block the Nod Tiberium Harvester.
+BOTCOUNT <count> <team> - Changes the max. amount of bots. Team param is optional. Host only.
+C4LOCK <playerid> - Prevent a player from using remote and proximity C4. (c4mute)
+C4LOCKTOGGLE <playerid> - Prevent or re-allow a player from using remote and proximity C4. (c4mutetoggle)
+CHANGECHAR [id] <preset> - Changes specified player's character to the specified infantry preset. Host only.
+CINEMATIC1 <playerid> <cinematic.txt> - Creates a cinematic event given the cinematic.txt (from Server Data folder) file name at the player current location. (cin1)
+CINEMATIC2 <objectid> <cinematic.txt> - Attaches a cinematic text file to an object. (cin2)
+CINEMATIC_CAMERA [id] <mouse smoothing: 0.0 - 1.0> <spectate smoothing: 0.0 - 1.0> - Smooths out camera and spectator motion for a cinematic experience.
+CMSG <red>,<green>,<blue> <message> - Displays a colored message in the info box of all players. Host only.
+CMSG <red>,<green>,<blue> <message> - Displays a colored message in the info box of all players. Host only.
+CMSGP <player> <red>,<green>,<blue> <message> - Displays a colored message in the info box of a player. Host only.
+CMSGP <player> <red>,<green>,<blue> <message> - Displays a colored message in the info box of a player. Host only.
+CMSGT <team> <red>,<green>,<blue> <message> - Displays a colored message in the info box of a team. Host only.
+CMSGT <team> <red>,<green>,<blue> <message> - Displays a colored message in the info box of a team. Host only.
+DEBUGDUMP - Dump all Renegade memory to a file (like a crashdump). This will likely take a minute or two and lag you out of the game! (dd)
+destroybuildingbyid <id> - Destroys a building by object ID. Host only.
+destroybuildingbyname <team> <name> - Destroys all buildings whose translated or preset name matches the given wildcard. Host only.
+destroybuildingbypreset <team> <preset name> - Destroys all buildings with the given preset name. Host only.
+destroybuildingbytype <team> <type> - Destroys all buildings of the given type. Host only. (See BuildingConstants for types) 
+DISARM <player> - Disarms all C4 of a player. Host only.
+DISARMB <player> - Disarms all beacons of a player. Host only.
+DISARMP <player> - Disarms all proximity C4 of a player. Host only.
+DONATE <from player> <to player> <amount> - Move cash from one player to another on the same team.
+EJECT <player> - Ejects that player from whatever vehicle they are in, if any
+Deletes registration of the given name. (essdelregister)
+Forcefully authenticates given player ID without password. (essfauth)
+Registers or updates password given name with given password and access level. (essregister)
+EVAA <sound file> - Plays an EVA message for all players. Host only.
+EVAP <player> <sound file> - Plays an EVA message for a specific player. Host only.
+EVAT <team> <sound file> - Plays an EVA message for a specific team. Host only.
+EXIT - End game and quit to desktop.
+
+EXTRAS <key>
+FASTBEACON <playerid> - Give a specified player Fast Beacon PowerUp. (10 secs beacon)
+FLUSHMITIGATIONEXCEPTIONS - Saves the changes in the mitigation exceptions to the file. (fme)
+FLY [id] - Toggles fly mode of the specified player. Host only.
+FORCETEAM <team> - Force all players to switch to the given team.
+FORCETT <playerid> [reason] - Forces a player to run TT.
+FORWARD_SERVER <client> <address> <port> [password] - Connects specified client to specified server. Host only.
+FREEZEPLAYER <playerid> - Removes control of the character for the player.
+FRIENDLYFIREOFF - Disable friendly fire for the current map.
+FRIENDLYFIREON - Enable friendly fire for the current map.
+GAME_INFO - Print info about a game in progress to console box
+GAMEOVER - end current game (server only).
+GET_BW_BUDGET_OUT - shows total bps budget out. (gbbo)
+GETBW <player> - retrives the current bandwidth for <player> (as set by sbbo)
+GFPS - Gets the maxium server FPS
+GIVECREDITS <id> <amount> - Gives specified amount of credits to the specified player. Host only.
+GIVEPOINTS <id> <amount> - Gives specified amount of points to the specified player. Host only.
+GIVEPOWERUP <playerid> <PowerUp> - Gives the specified PowerUp to the player. (givepow)
+GOD <playerid> - Give a specified player a God Character.
+GRANTWEAPON [id] <preset> - Grants specified weapon preset to the specified player. Host only.
+hardwareid <playerid> - Gets the hardware identifier for a player. Host only. (hwid)
+HUDMSG <red>,<green>,<blue> <message> - Displays a colored message on the HUD of all players. Host only.
+HUDMSGP <player> <red>,<green>,<blue> <message> - Displays a colored message on the HUD of a player. Host only.
+HUDMSGT <team> <red>,<green>,<blue> <message> - Displays a colored message on the HUD of a team. Host only.
+ICON <player> <w3d file> - Shows an emoticon over the head of the passed in player that is visible to their team. Host only.
+ICON2 <player> <w3d file> - Shows an emoticon over the head of the passed in player that is visible to their enemies. Host only.
+ID <string> - Prints the name and ID of all players matching <string>. No string means all players.
+KICK <playerid> [reason] - Kicks the given player from the server.
+KILL <playerid> - Kills the player's character (if they're driving a vehicle it will kill that too).
+KILLHARVGDI - Destroys the GDI Tiberium Harvester.
+KILLHARVNOD - Destroys the Nod Tiberium Harvester.
+LISTBAN / LISTBAN <name/IP/serial/hwid> / LISTBAN <name> <IP> <serial> <hwid> - Lists all bans, or any ban that matches the specified name, IP, OR serial/hwid, or name, IP, AND serial/hwid.
+LISTBANEXCEPTION / LISTBANEXCEPTION <name/IP/serial/hwid> / LISTBANEXCEPTION <name> <IP> <serial> <hwid> - Lists all ban exceptions, or any ban exception that matches the specified name, IP, OR serial/hwid, or name, IP, AND serial/hwid.
+LISTFORCETT / LISTFORCETT <name/IP/serial/hwid> / LISTFORCETT <name> <IP> <serial> <hwid> - Lists all forceTTs, or any forceTT that matches the specified name, IP, OR serial/hwid, or name, IP, AND serial/hwid.
+LISTFORCETTEXCEPTION / LISTFORCETTEXCEPTION <name/IP/serial/hwid> / LISTFORCETTEXCEPTION <name> <IP> <serial> <hwid> - Lists all forceTT exceptions, or any forceTT exception that matches the specified name, IP, OR serial/hwid, or name, IP, AND serial/hwid.
+LISTGAMEDEFS - List all game definitions that can be used with the currently loaded mod package.
+MAP - Print the name of the current map. Host only.
+MAPCH <playerid> <file> - Check if a given client has a given file. Host only.
+MAPNUM - Print the index within the map list of the current map. Host only.
+MAXARMOR <playerid> - Gives a specified player extra 500 health and armor.
+MESSAGE <message> - Sends a chat message to all players. (msg)
+MESSAGE <message> - sends a chat message to all clients. Host only. (msg)
+MINED <team> - Print the current mine count for <team>. Host only.
+0 = Nod
+1 = GDI
+MLIMIT <new limit> - Sets the mine limit. Renegade host only.
+MLIMITD - Print the current mine limit. Host only.
+MLIST <position> - Print the name of the map in the given position in the map list. MLIST all - Print entire map list. Host only.
+MLISTC <position> <map> - Change the map at <position> in the map list. If the position is after the last map, it will be inserted at the end. Host only.
+MOD - Print the name of the current mod. Host only.
+MUSICA <sound file> - Plays looping background music for all players. Host only.
+MUSICP <player> <sound file> - Plays looping background music for a specific player. Host only.
+MUTE <playerid> - Mute a player, preventing them from speaking in chat or using radio commands.
+MUTESOUNDS <playerid> - Prevent a player from using sound commands.
+MUTETOGGLE <playerid> - Mute or unmute a player, preventing them from speaking in chat or using radio commands.
+NET_UPDATE_RATE - set the max. net update think rate (times per second). (nur)
+NLIMIT <limit> - Changes the current naval vehicle limit. Host only.
+NLIMITD - Displays the current maval vehicle limit. Host only.
+NOMUSICA - Stops the background music for all players. Host only.
+NOMUSICP <player> - Stops the background music for a specific player. Host only.
+PAGE Nickname Message - Page a Westwood Online user.
+PAMSG <player> <message> - Sends an admin message to a specific player. Host only.
+PEDESTALSOFF - Disable pedestals for the current map.
+PEDESTALSON - Enable pedestals for the current map.
+PINFO - print information about the players in the game
+PLAYER_INFO - Print info about players in the game to the console box
+PLAYERSAY <playerid> <text> - Types the specified message as specified player in the public chat, triggering all Chat events.
+PLIMIT <new limit> - Changes the player limit
+PLIMITD - Displays the current player limit
+PPAGE <playerid> <message> - Sends a page to a specific player.
+PPAGE <player> <message> - Sends a page to a specific player. Host only.
+PRINTMITIGATIONEXCEPTIONS - Prints all the mitigation exceptions in the memory. (pme)
+QUIT - End game and quit to desktop.
+
+RADAR - Get the radar mode for the server. Host only.
+rchwid <playerid> - Get specified player hardware hash.
+rcserial <playerid> - Get specified player serial hash.
+REBALANCE - Rebalance teams.
+REFUND <playerid> <amount> - Gives a player the specified amount of credits (can only be a positive amount). (givecredits)
+Depreciated
+RELOAD - Reload da.ini and gamemode.ini. (rehash)
+RELOADCONFIG - Reload tt.cfg.
+REMIX - Remix teams.
+RemoteC4Limit <new limit> - Sets the remote C4 limit. Renegade host only.
+REMOVEBAN <name/IP/serial/hwid> / REMOVEBAN <name> <ip> <serial> <hwid> - Removes any ban that matches the specified name, IP, OR serial/hwid, or name, IP, AND serial/hwid.
+REMOVEBANEXCEPTION <name/IP/serial/hwid> / REMOVEBANEXCEPTION <name> <ip> <serial> <hwid> - Removes any ban exception that matches the specified name, IP, OR serial/hwid, or name, IP, AND serial/hwid.
+REMOVEFORCETT <name/ip/serial> / REMOVEFORCETT <name> <ip> <serial> - Removes any forceTT that matches the specified name, IP, OR serial/hwid, or name, IP, AND serial/hwid.
+REMOVEFORCETTEXCEPTION <name/ip/serial/hwid> / REMOVEFORCETTEXCEPTION <name> <ip> <serial> <hwid> - Removes any forceTT exception that matches the specified name, IP, OR serial/hwid, or name, IP, AND serial/hwid.
+REMOVEMITIGATIONEXCEPTION <name> - Removes the custom mitigation exception for specified player. (rme)
+REMOVETAG <playerid> <tag> - Removes the given tag from the player.
+RESTART - Quit to desktop and restart process (dedicated server only).
+
+revivebuildingbyid <id> - Revives a building by object ID. Host only.
+revivebuildingbyname <team> <name> - Revives all buildings whose translated or preset name matches the given wildcard. Host only.
+revivebuildingbypreset <team> <preset name> - Revives all buildings with the given preset name. Host only.
+revivebuildingbytype <team> <type> - Revives all buildings of the given type. Host only. (See BuildingConstants for types) 
+REVIVELIST - Display valid building presets names.
+SDE <playerid> - Enable server damage extrapolation for the given player.
+SDETOGGLE <playerid> - Enable or disable server damage extrapolation for the given player.
+serial <playerid> - Gets the serial hash for a player. Host only.
+SET <option> <value> - Set option.
+SET_BW_BUDGET_OUT <bps> - set total bps budget out. (sbbo)
+SETACCESSLEVEL <playerid> <0-6> - Sets the given player's access level. (sal)
+SETBW <player> <bandwidth> - sets the current bandwidth for <player> (as set by sbbo)
+SETSPEED [id] <speed> - Changes maximum speed of the specified player. Host only.
+SFPS fps - Sets the maxium server FPS
+SHUN <playerid> - Shun a player from using server commands.
+SND3DA <player> <sound file> - Plays a 3d sound effect for all players. The player is used to identify where to play the 3d sound. Host only.
+SND3DP <player> <sound file> - Plays a 3D sound effect for a specific player. Host only.
+SND3DT <player> <team> <sound file> - Plays a 3D sound for a given team at the location of <player>. Host only.
+0 = Nod
+1 = GDI
+SNDA <sound file> - Plays a sound effect for all players. Host only.
+SNDP <player> <sound file> - Plays a sound effect for a specific player. Host only.
+SNDT <team> <sound file> - Plays a sound effect for a specific team. Host only.
+SONG - Prints the name of the last song loaded by the MUSIC command or the Set_Background_Music script command. Host only.
+SPAWNVEHICLE [id] <zOffset> <preset> - Spawns the specified vehicle preset at specified player's location with a height offset, and forces the player in it. Host only.
+SPECTATE [id] - Puts specified player into the spectator mode. If player is already spectator, they will be respawned. Host only.
+SPY <id> - Toggles player or their vehicle's spy mode. Host only.
+SPY2 <playerid> - Essentially turns the object into a spy, base defenses will ignore the player + change character to SBH.
+SPY3 <playerid> - Essentially turns the object into a spy, base defenses will ignore the player with his actual character.
+SSHOT <player> - Take a remote screenshot of a player. Host only.
+SSURL <url> - Set the URL to be used for remote screenshots. Host Only.
+SVERSION - Get the version of bandtest.dll installed on this machine.
+SWAP - Swap teams.
+TAG <playerid> <tag> - Legacy command to set the custom name tag on a player. Persists through leaving or multiple maps; defaults to position 0
+TAG <playerid> <tag> - Sets the custom name tag for a player. Host only.
+TAKEPOINTS <playerid> <amount> - Takes the specified amount of points from the player (please enter a positive amount).
+TEAM <player> <team> - Changes a players team. Host only.
+0 = Nod
+1 = GDI
+TEAM2 <player> <team> - Changes a players team without taking cash/score Host only.
+0 = Nod
+1 = GDI
+TEAM3 <playerid> - Swap a player's team, allowing them to keep their score, kills, deaths, and starting credits. Any credits over the starting amount are distributed amongst their former team.
+TEAM4 <playerid> - Swap a player's team, allowing them to keep their score, kills, deaths, and reseting their credits to the starting amount.
+TEAM5 <playerid> - Swap a player's team, reseting their score, kills and deaths to 0, and their credits to the starting amount.
+TEAMMESSAGE <team> <message> - Sends a chat message to all players on the specified team. (thmsg)
+TechUp <level> - Trigger Desired Tech Level (or the highest tech level on the map if its lower than specified) (techup)
+TIME <new time> - Changes the time remaining
+TIMED - Displays the time remaining
+timegame - Display actual game duration since start of map.
+TIMEL <new limit> - Changes the time limit
+TIMELD - Displays the time limit
+TIMEOUT - Ends the game by time limit expired.
+TIMESCALE - Set the timescale of the game.
+TMSG <player> <message> - Sends a message to a team as though it was comming from <player>.
+TOGGLEPOWER <team> - Toggles the base power for specified team. Host only.
+TPAGE <team> <message> - Sends a page to every player on the given team. Host only.
+TPAGE <team> <message> - Sends a page to a specific team. Host only.
+0 = Nod
+1 = GDI
+UNBEACONLOCK <playerid> - Re-allow a player to deploy beacons. (unbeaconmute)
+UNBLAMO <playerid> - Set shield type of specified object to Kevlar. Object is now possible to kill or destroy.
+UNBLOCKHARVGDI - Unblock the GDI Tiberium Harvester.
+UNBLOCKHARVNOD - Unblock the Nod Tiberium Harvester.
+UNC4LOCK <playerid> - Re-allow a player to use remote and proximity C4. (unc4mute)
+UNFREEZEPLAYER <playerid> - Gives control of the character to the player.
+UNMUTE <playerid> - Unmute a player.
+UNMUTESOUNDS <playerid> - Re-allow a player to use sound commands.
+UNREFUND <playerid> <amount> - Takes a player the specified amount of credits (can only be a positive amount). (takecredits)
+UNSDE <playerid> - Disable server damage extrapolation for the given player.
+UNSHUN <playerid> - Unshun a player and allow him to using server commands again.
+UNSPY <playerid> - Base Defenses no longer ignore the object if they was ignoring it before.
+VERSION <player> - Get the version of bandtest.dll installed on a client. Host Only.
+VLIMIT <limit> - Changes the current vehicle limit. Host only.
+VLIMITD - Displays the current vehicle limit. Host only.
+WIN <team> - Kills the buildings of the other team to end the game. Host only.
+0 = Nod
+1 = GDI

@@ -1,0 +1,59 @@
+Name: beaconall
+Syntax: !beaconall
+Help: Gives every player in a game powerup with Ion Cannon Beacon - 30s.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: beaconfastall
+Syntax: !beaconfastall
+Help: Gives every player in a game powerup with Ion Cannon Beacon - 10s.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: bmute
+Syntax: !bmute <player_name>
+Help: Prevent or re-allow a specified player from deploying beacons.
+Permission: Temporary Moderators
+
+Name: c4mute
+Syntax: !c4mute <player_name>
+Help: Prevent or re-allow a player from using remote C4 and proximity C4.
+Permission: Temporary Moderators
+
+Name: disarm
+Syntax: !disarm <player_name>
+Help: Disarms specified player all Proximity/Remote/Timed C4 and Beacons/Nukes if any.
+Permission: Temporary Moderators
+
+Name: disarmb
+Syntax: !disarmb <player_name>
+Help: Disarms specified player all Beacons/Nukes if any.
+Permission: Temporary Moderators
+
+Name: disarmp
+Syntax: !disarmp <player_name>
+Help: Disarms specified player all Proximity C4 if any.
+Permission: Temporary Moderators
+
+Name: massdisarmb
+Syntax: !massdisarmb
+Help: Disarms all beacons or nukes in a game.
+Permission: Full and Veteran Moderators
+
+Name: mlimit
+Syntax: !mlimit
+Help: Displays current mine limit
+Permission: Normal users
+
+Name: nukeall
+Syntax: !nukeall
+Help: Gives every player in a game powerup with Nuclear Strike Beacon - 30s.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: nukefastall
+Syntax: !nukefastall
+Help: Gives every player in a game powerup with Nuclear Strike Beacon - 10s.
+Permission: Owners, Administrators, Seniors and Developers
+
+Name: pedestals
+Syntax: !pedestals <on/off>
+Help: Enable or Disable pedestals for the current map.
+Permission: Full and Veteran Moderators

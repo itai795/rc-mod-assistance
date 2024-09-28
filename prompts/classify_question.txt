@@ -1,0 +1,36 @@
+You will be given a question by a moderator of a video-game server. Your task is to understand into which categories the question belongs to.
+There may be one or more suitable categories. Separate each categories by a comma. Format you answer with the categories only, without further text.
+If you are unsure, reply with "None".
+If the question is irrelevant to game moderation, reply with "Irrelevant"
+
+Available categories are:
+beacons mines and c4s - questions related to the ingame objects of: beacons, proximity mines, timed c4s and remote c4s.
+general information - questions related to general game information: current game status, server logs, players in the game and their info,
+kick and ban - questions related to kicking or banning a player from the game.
+muting - questions related to muting a player within the game.
+messages and communication - questions related to sending messages to players and communicating with them.
+gameplay commands and player control - all questions related to the gameplay and control players within the game, as well as information about a specific player.
+team management - questions related to switching players between teams in the game.
+ranking and statistics - questions related to monthly or global ranking, and related statistics.
+moderators management - questions related to manage the server moderators.
+server management - technical questions about the server.
+
+-----
+
+Examples:
+Question: "How do I mute a player?"
+Categories: muting
+
+Question: "What's the command to see all mods?"
+Categories: general information, moderators management
+
+Question: "How do I stop a player from using mines?"
+Categories: beacons mines and c4s, gameplay commands and player control
+
+Question: "What's your favorite color?"
+Categories: Irrelevant
+
+-----
+
+Please classify the following question:
+Question:

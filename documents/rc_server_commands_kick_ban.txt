@@ -1,0 +1,110 @@
+Name: allow
+Syntax: !allow <playername>
+Help: Allows a user back to the server after they have been kicked
+Permission: Temporary Moderators
+
+Name: autokb
+Syntax: !autokb <playername> <reason>
+Help: Adds the specified player name to the list of auto kick ban.
+Permission: Full and Veteran Moderators
+Plugin: warn_system
+
+Name: autokb_list
+Syntax: !autokb_list
+Help: Lists all the players currently are part of auto kick ban.
+Permission: Half Moderators
+Plugin: warn_system
+
+Name: ban
+Syntax: !ban <playername> <reason>
+Help: Bans a user from the server
+Permission: Half Moderators
+Alias: !kickban !kb 
+
+Name: banhw
+Syntax: !banhw <add|del|lookup> <player_name> <reason>
+Help: Add / Remove / Lookup for hardware hash bans
+Permission: Full and Veteran Moderators
+Plugin: hw_system
+
+Name: banip
+Syntax: !ban <ip/partial ip> <reason>
+Help: Bans an ip or ip range from the server. To ban a partial IP use !banip 123.123.123 (First three digit groups)
+Permission: Half Moderators
+
+Name: banlistfds
+Syntax: !banlistfds
+Help: Lists all ban entries from banlist.tsv file at FDS. Banned entries are blocked by connection acceptance filter at FDS.
+Permission: Half Moderators
+
+Name: banlog
+Syntax: !banlog <playername>
+Help: Searches the ban log for any records matching your search string.
+Permission: Temporary Moderators
+
+Name: banserial
+Syntax: !banserial <add|del|lookup> <player_name> <reason>
+Help: Add / Remove / Lookup for Serial Hash Bans
+Permission: Full and Veteran Moderators
+Plugin: serial_system
+
+Name: delautokb
+Syntax: !delautokb <playername>
+Help: Removes the specified player name from the list of auto kick ban.
+Permission: Full and Veteran Moderators
+Plugin: warn_system
+
+Name: delban
+Syntax: !delban <id>
+Help: Deletes a specific ban
+Permission: Full and Veteran Moderators
+
+Name: delbanfds
+Syntax: !delbanfds <Name> or <IP_Address> or <Serial_Hash> or <Hardware_Hash>
+Help: Remove specified ban entry from banlist.tsv file at FDS. Matching string can be found over !banlistfds.
+Permission: Full and Veteran Moderators
+
+Name: hwbanforced
+Syntax: !hwbanforced <player_name> <hardware_hash> <reason>
+Help: Force ban a hardware hash that does not exist in the database.
+Permission: Full and Veteran Moderators
+Plugin: hw_system
+
+Name: hwbanlist
+Syntax: !hwbanlist
+Help: Print all placed hardware bans from the database.
+Permission: Half Moderators
+Plugin: hw_system
+
+Name: kick
+Syntax: !kick <playername> <reason>
+Help: Kicks a specific user
+Permission: Temporary Moderators
+
+Name: kicklog
+Syntax: !kicklog <searchstring>
+Help: Searches the kick log for any records matching your search string, or if no search is specified shows the last 10 records.
+Permission: Temporary Moderators
+
+Name: playerinfo
+Syntax: !playerinfo
+Help: Shows detailed playerinfo
+Permission: Temporary Moderators
+Alias: !pi
+
+Name: qkick
+Syntax: !qkick <playername> <reason>
+Help: Qkicks (kick and auto-allow) a specific user
+Permission: Temporary Moderators
+
+Name: serialbanforced
+Syntax: !serialbanforced <player_name> <serial_hash> <reason>
+Help: Force ban a Serial hash that does not exist in the database.
+Permission: Full and Veteran Moderators
+Plugin: serial_system
+
+Name: serialbanlist
+Syntax: !serialbanlist
+Help: Print all placed serial bans from the database.
+Permission: Half Moderators
+Plugin: serial_system

@@ -1,0 +1,55 @@
+Name: addmute
+Syntax: !addmute <player_name> <ip_address> <hardware_hash> <reason>
+Help: Add a mute to the database without the player needing to be ingame.
+Permission: Half Moderators
+Plugin: mute_system
+
+Name: bmute
+Syntax: !bmute <player_name>
+Help: Prevent or re-allow a specified player from deploying beacons.
+Permission: Temporary Moderators
+
+Name: c4mute
+Syntax: !c4mute <player_name>
+Help: Prevent or re-allow a player from using remote C4 and proximity C4.
+Permission: Temporary Moderators
+
+Name: delmute
+Syntax: !delmute <player_name>
+Help: Remove a mute from the database without the player needing to be ingame.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: mute
+Syntax: !mute <player_name> <reason>
+Help: Prevents a player from using chat or radio commands and adds their info into a database. Player must be ingame.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: muteinfo
+Syntax: !muteinfo <player_name>
+Help: View info about a mute.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: mutelist
+Syntax: !mutelist <player_name> or !mutelist <ip_address>
+Help: View the mute list with specified string or every record from a database.
+Permission: Temporary Moderators
+Plugin: mute_system
+
+Name: tempmute
+Syntax: !tempmute <player_name>
+Help: Mutes specified player in a game without storing into a database.
+Permission: Temporary Moderators
+
+Name: tempunmute
+Syntax: !tempunmute <player_name>
+Help: Unmute specified player in a game without touching a database.
+Permission: Temporary Moderators
+
+Name: unmute
+Syntax: !ummute <player_name>
+Help: Unmutes a player and removes thier info from a database.
+Permission: Temporary Moderators
+Plugin: mute_system
